@@ -1,0 +1,43 @@
+Test Cases:
+Rohit Tikyani
+
+Input:
+	"122 03 .30301 22 0203 203.030e-15"
+Output:
+decimal "122"
+octal "03"
+decimal "30301"
+decimal "22"
+octal "0203"
+float "203.030e-15"
+
+Input:
+       "foo 023.208e-10 13 038"
+
+Output:
+octal "023"
+decimal "208"
+decimal "10"
+decimal "13"
+octal "03"
+decimal "8"
+
+Input:
+	矣
+Output:
+	Null
+
+Input:
+	"0234.210e-8"
+Output:
+octal "0234"
+decimal "210"
+decimal "8"
+
+Input:
+	"0234.2 10e-8 0xaef43"
+Output:
+octal "0234"
+decimal "210"
+decimal "8"
+hexadecimal "0xaef43"
